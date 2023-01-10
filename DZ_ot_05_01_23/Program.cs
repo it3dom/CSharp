@@ -75,31 +75,14 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 //-----------------------------------------------------
-//  Console.WriteLine ("Введите число ");
-//   int N = Convert.ToInt32(Console.ReadLine());
-
-// void FillArray(int[] N)
-// {
-//     int length = N.Length;
-//     int index = 0;
-//     while (index < length)
-//     {
-//      N[index] = (1);
-//      index++;   
-//     }
-//  }
-// void PrintArray(int[] N1)
-// {
-//     int count = N1.Length;
-//     int index1 = 0;
-//     while (index1 < count)
-//     {
-//         Console.Write(N1[index1]);
-//         index1++;
-//     }
-// }
-// int[] array = new int[10];
-
-// FillArray(array);
-// PrintArray(array);
-//----------------------------------------------
+Console.WriteLine("Введите цифру: ");
+int N = Convert.ToInt32(Console.ReadLine());
+if (N < 2)
+{
+    Console.WriteLine ("нет четных чисел ");
+}
+for (int i = 2; i <= N; i = i + 2)
+{
+    Console.Write(i);
+    Console.Write(" ");
+}
