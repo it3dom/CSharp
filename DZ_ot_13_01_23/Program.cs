@@ -87,41 +87,41 @@
 // Console.WriteLine(gr);
 
 
-// Console.Write("Первая сторона: ");
-// double a = Convert.ToInt64(Console.ReadLine());
-// Console.Write("Вторая сторона: ");
-// double b = Convert.ToInt64(Console.ReadLine());
-// Console.Write("Сторона три: ");
-// double c = Convert.ToInt64(Console.ReadLine());
+Console.Write("Первая сторона: ");
+double a = Convert.ToInt64(Console.ReadLine());
+Console.Write("Вторая сторона: ");
+double b = Convert.ToInt64(Console.ReadLine());
+Console.Write("Сторона три: ");
+double c = Convert.ToInt64(Console.ReadLine());
 
-// if (a + b > c && b + c > a && a + c > b)
-// {
-//     Console.WriteLine("Да,это треугольник");
+if (a + b > c && b + c > a && a + c > b)
+{
+    Console.WriteLine("Да,это треугольник");
 
-// double P = a + b + c;
-// double pol = (a + b + c) / 2;
-// double S = pol * (pol - a) * (pol - b) * (pol - c);
-// double s = Math.Sqrt(S);
+double P = a + b + c;
+double pol = (a + b + c) / 2;
+double S = pol * (pol - a) * (pol - b) * (pol - c);
+double s = Math.Sqrt(S);
 
-// if (a == b && b == c)  Console.WriteLine("Треугольник равносторонний ");
-// else if (a == b || b == c || a == c) Console.WriteLine("Треугольник равнобедренный ");
+if (a == b && b == c)  Console.WriteLine("Треугольник равносторонний ");
+else if (a == b || b == c || a == c) Console.WriteLine("Треугольник равнобедренный ");
 
-// double A = ((b * b) + (c * c) - (a * a)) / (2 * b * c);
-// double Agr = Math.Acos(A) * 180 / Math.PI;
-// double B = ((a * a) + (c * c) - (b * b)) / (2 * a * c);
-// double Bgr = Math.Acos(B) * 180 / Math.PI;
-// double C = ((a * a) + (b * b) - (c * c)) / (2 * a * b);
-// double Cgr = Math.Acos(C) * 180 / Math.PI;
+double A = ((b * b) + (c * c) - (a * a)) / (2 * b * c);
+double Agr = Math.Acos(A) * 180 / Math.PI;
+double B = ((a * a) + (c * c) - (b * b)) / (2 * a * c);
+double Bgr = Math.Acos(B) * 180 / Math.PI;
+double C = ((a * a) + (b * b) - (c * c)) / (2 * a * b);
+double Cgr = Math.Acos(C) * 180 / Math.PI;
 
-// if (Agr == 90 || Bgr == 90 || Cgr == 90 ) Console.WriteLine("Треугольник прямоугольный ");
+if (Agr == 90 || Bgr == 90 || Cgr == 90 ) Console.WriteLine("Треугольник прямоугольный ");
 
-// Console.WriteLine($"периметр - {P}, полуперимтр - {pol}, площадь - {s: 0.00} ");
-// Console.WriteLine($"Угол А:{Agr: 0.00} градусов; Угол Б:{Bgr: 0.00} градусов; Угол С:{Cgr: 0.00} градусов. ");
+Console.WriteLine($"периметр - {P}, полуперимтр - {pol}, площадь - {s: 0.00} ");
+Console.WriteLine($"Угол А:{Agr: 0.00} градусов; Угол Б:{Bgr: 0.00} градусов; Угол С:{Cgr: 0.00} градусов. ");
 
-// }
-// else Console.WriteLine(" ");
-// Console.WriteLine(" -Eror-  404 ");
-// Console.WriteLine(" ");
+}
+else 
+Console.WriteLine(" -Eror-  404 ");
+Console.WriteLine(" ");
 
 
 
