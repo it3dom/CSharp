@@ -52,30 +52,30 @@
 // Задача 29: Напишите программу, которая задаёт массив из 8 целых чисел с клавиатуры и
 //  далее выводит массив на экран в одну строку
 
-// Console.WriteLine("Введите длину массива");
-// int N = Convert.ToInt32(Console.ReadLine());
-// int[] array = new int[N];
+Console.WriteLine("Введите длину массива");
+int N = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[N];
 
-// FillArray(array); // создать
-// VvodArray(array);  //ввести/изменить
-// PrintArray(array); //вывод
+FillArray(array); // создать
+VvodArray(array);  //ввести/изменить
+PrintArray(array); //вывод
 
-// void VvodArray(int[] array)
-// {
-//     for (int i = 0; i < N; i++)
-// {
-//     Console.WriteLine("Введите {0}-й элемент", i + 1);
-//     array[i] = Convert.ToInt32(Console.ReadLine());
-// }
-// }
+void VvodArray(int[] array)
+{
+    for (int i = 0; i < N; i++)
+{
+    Console.WriteLine("Введите {0}-й элемент", i + 1);
+    array[i] = Convert.ToInt32(Console.ReadLine());
+}
+}
 
-// void FillArray(int[] array)
-// {
-//     for (int i = 0; i < array.Length; i++)
-//         array[i] = new Random().Next(0, 100);
-// }
+void FillArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        array[i] = new Random().Next(0, 100);
+}
 
-// void PrintArray(int[] array)
+void PrintArray(int[] array)
 
 {
     for (int i = 0; i < array.Length; i++)
