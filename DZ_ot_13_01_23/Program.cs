@@ -50,29 +50,29 @@
 
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5
 
-// Console.WriteLine("Ввод b1 ");
-// double b1 = Convert.ToInt64(Console.ReadLine());
-// Console.WriteLine("Ввод k1 ");
-// double k1 = Convert.ToInt64(Console.ReadLine());
-// Console.WriteLine("Ввод b2 ");
-// double b2 = Convert.ToInt64(Console.ReadLine());
-// Console.WriteLine("Ввод k2 ");
-// double k2 = Convert.ToInt64(Console.ReadLine());
+Console.WriteLine("Ввод b1 ");
+double b1 = Convert.ToInt64(Console.ReadLine());
+Console.WriteLine("Ввод k1 ");
+double k1 = Convert.ToInt64(Console.ReadLine());
+Console.WriteLine("Ввод b2 ");
+double b2 = Convert.ToInt64(Console.ReadLine());
+Console.WriteLine("Ввод k2 ");
+double k2 = Convert.ToInt64(Console.ReadLine());
 
 
-// double x = (b2 - b1) / (k1 - k2);
-// double y = (k2 * b1 - k1 * b2) / (k2 - k1);
+double x = (b2 - b1) / (k1 - k2);
+double y = (k2 * b1 - k1 * b2) / (k2 - k1);
 
-// if (x == y)
-// {
-//     Console.WriteLine(" ");
-//     Console.Write($"точка пересечения {x},{y} ");
-// }
-// else
-// {
-//     Console.WriteLine(" ");
-//     Console.Write($"Пересечения нет, {x}; {y}");
-// }
+if (x == y)
+{
+    Console.WriteLine(" ");
+    Console.Write($"точка пересечения {x},{y} ");
+}
+else
+{
+    Console.WriteLine(" ");
+    Console.Write($"Пересечения нет, {x}; {y}");
+}
 //--------------------------------------------------------------------------------------------------
 
 
